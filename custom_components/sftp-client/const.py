@@ -4,7 +4,7 @@ from collections.abc import Callable
 
 from homeassistant.util.hass_dict import HassKey
 
-DOMAIN = "sftp_client"
+DOMAIN = "sftp-client"
 CONF_BACKUP_PATH = "backup"
 DEFAULT_BACKUP_PATH = "backup"
 
