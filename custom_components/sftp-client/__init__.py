@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 
-from asyncssh import PermissionDenied, SFTPError
+from asyncssh import PermissionDenied
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_HOST, CONF_PASSWORD, CONF_USERNAME
@@ -43,7 +43,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: SFTPClientConfigEntry) -
     except ConnectionRefusedError as err:
         raise ConfigEntryError(
             translation_domain=DOMAIN,
-            translation_key="server_notfound",
+            translation_key="server_not_found",
         ) from err
     except OSError as err:
         raise ConfigEntryError(

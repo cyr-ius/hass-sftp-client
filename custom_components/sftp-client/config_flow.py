@@ -51,9 +51,6 @@ class FTPDriveConfigFlow(ConfigFlow, domain=DOMAIN):
                 password=user_input[CONF_PASSWORD],
             )
 
-            # Check if we can connect to the WebDAV server
-            # .check() already does the most of the error handling and will return True
-            # if we can access the root directory
             try:
                 await sftp.async_connect()
                 result = await sftp.client.listdir()
@@ -62,7 +59,7 @@ class FTPDriveConfigFlow(ConfigFlow, domain=DOMAIN):
             except SSLError:
                 errors["base"] = "ssl_error"
             except ConnectionRefusedError:
-                errors["base"] = "server_notfound"
+                errors["base"] = "server_not_found"
             except OSError:
                 errors["base"] = "cannot_connect"
             except Exception:

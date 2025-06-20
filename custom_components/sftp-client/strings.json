@@ -20,6 +20,7 @@
       "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
       "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
       "ssl_error": "[%key:common::config_flow::error::ssl_error%]",
+      "server_not_found": "[%key:common::config_flow::error::server_not_found%]",
       "unknown": "[%key:common::config_flow::error::unknown%]"
     },
     "abort": {
@@ -32,6 +33,9 @@
     },
     "cannot_connect": {
       "message": "Cannot connect to SFTP server"
+    },
+    "server_not_found": {
+      "message": "Server not found"
     },
     "cannot_access_or_create_backup_path": {
       "message": "Cannot access or create backup path. Please check the path and permissions."
