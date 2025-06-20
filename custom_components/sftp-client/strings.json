@@ -19,8 +19,8 @@
     "error": {
       "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
       "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
-      "ssl_error": "[%key:common::config_flow::error::ssl_error%]",
-      "server_not_found": "[%key:common::config_flow::error::server_not_found%]",
+      "ssl_error": "SSL error occurred",
+      "server_not_found": "Server not found",
       "unknown": "[%key:common::config_flow::error::unknown%]"
     },
     "abort": {
