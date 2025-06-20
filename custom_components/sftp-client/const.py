@@ -1,4 +1,4 @@
-"""Constants for the FTPClient integration."""
+"""Constants for the SFTPClient integration."""
 
 from collections.abc import Callable
 
