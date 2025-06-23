@@ -3,7 +3,7 @@
   "name": "SFTP Client",
   "codeowners": ["@cyr-ius"],
   "config_flow": true,
-  "documentation": "https://www.home-assistant.io/integrations/ftp-drive",
+  "documentation": "https://github.com/cyr-ius/hass-sftp-client",
   "integration_type": "service",
   "iot_class": "cloud_polling",
   "loggers": ["asyncssh"],
