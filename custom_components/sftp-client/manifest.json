@@ -1,5 +1,5 @@
 {
-  "domain": "sftp-client",
+  "domain": "sftp_client",
   "name": "SFTP Client",
   "codeowners": ["@cyr-ius"],
   "config_flow": true,
@@ -8,5 +8,5 @@
   "iot_class": "cloud_polling",
   "loggers": ["asyncssh"],
   "requirements": ["asyncssh==2.21.0"],
-  "version": "1.0.0"
+  "version": "1.0.5"
 }
